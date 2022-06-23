@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Meta HTML -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Delightful | Lombok</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="" />
+    <meta property="og:description" content="" />
+    <meta property="og:type" content="" />
+    <meta property="og:image" content="" />
+    <link rel="canonical" href="#" />
+
+    <!-- Twitter -->
+    <meta name="twitter:title" content="" />
+    <meta name="twitter:description" content="" />
+    <meta name="twitter:card" content="" />
+    <meta name="twitter:site" content="" />
+    <meta name="twitter:creator" content="" />
+    <meta name="twitter:image" content="" />
+    <meta name="twitter:domain" content="" />
+
+    <!-- Theme -->
+    <link rel="icon" href="#" />
+    <link rel="apple-touch-icon" sizes="152x152" href="#" />
+    <link rel="icon" type="image/png" sizes="32x32" href="#" />
+    <link rel="icon" type="image/png" sizes="16x16" href="#" />
+    <link rel="manifest" href="#" />
+    <link rel="mask-icon" href="#" color="" />
+    <meta name="msapplication-TileColor" content="" />
+    <meta name="theme-color" content="" />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Custom Style -->
+    <link href="/dist/output.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!--------------------------------------------- 
+      Header
+    ---------------------------------------------->
+    <header class="relative flex min-h-screen items-center justify-center">
+      <!--------------------------------------------- 
+        Navbar
+      ---------------------------------------------->
+      <nav class="fixed top-0 z-50 w-screen" id="nav">
+        <div class="flex w-full items-center justify-between p-5 lg:px-8">
+          <a class="text-2xl font-bold tracking-normal lg:text-4xl" href="#"
+            >LO</a
+          >
+          <div>
+            <button
+              class="relative z-50 flex items-center lg:hidden"
+              id="toggle-menu-button"
+            >
+              <span class="sr-only">Toggle Menu</span>
+              <div
+                class="flex h-5 flex-col items-end justify-between"
+                id="open"
+              >
+                <span class="block h-0.5 w-7 rounded-full bg-gray-300"></span>
+                <span class="block h-0.5 w-7 rounded-full bg-gray-300"></span>
+                <span class="block h-0.5 w-7 rounded-full bg-gray-300"></span>
+              </div>
+              <div
+                class="flex hidden h-7 flex-col items-end justify-between"
+                id="close"
+              >
+                <span
+                  class="block h-0.5 w-8 origin-left translate-y-0.5 rotate-45 transform rounded-full bg-[#494946]"
+                ></span>
+                <span
+                  class="block h-0.5 w-8 origin-left -translate-y-0.5 -rotate-45 transform rounded-full bg-[#494946]"
+                ></span>
+              </div>
+            </button>
+            <div
+              class="fixed top-0 left-0 z-40 flex hidden h-screen w-screen flex-col items-center justify-center bg-gray-200 text-right text-3xl lg:relative lg:block lg:h-auto lg:w-auto lg:bg-transparent lg:text-left lg:text-lg"
+              id="toggle-menu"
+            >
+              <ul class="flex flex-col gap-y-7 md:flex-row md:gap-2">
+                <li>
+                  <a href="#" class="px-6 text-sm font-bold uppercase">about</a>
+                </li>
+                <li>
+                  <a href="#" class="px-6 text-sm font-bold uppercase"
+                    >articles</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="px-6 text-sm font-bold uppercase">cart</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!--------------------------------------------- 
+        Navbar
+      ---------------------------------------------->
+
+      <!--------------------------------------------- 
+      Section Header
+    ---------------------------------------------->
+      <section class="mb-5 w-screen" id="richard">
+        <div class="flex min-h-screen flex-wrap">
+          <div
+            class="relative flex flex-col justify-end lg:w-1/2 xl:justify-between"
+          >
+            <div>
+              <div
+                class="text-jumbotron px-10 uppercase lg:absolute lg:top-1/2 lg:left-0 lg:-translate-y-1/2"
+              >
+                <h2 class="text-border-bottom text-border-top text-2xl">
+                  spring
+                </h2>
+                <h2 class="text-border-bottom mb-6 py-3 text-2xl">
+                  collection
+                </h2>
+                <h1 class="pt-3 text-7xl font-bold lg:pb-12">shop</h1>
+              </div>
+            </div>
+            <div class="flex items-center bg-[#E7E9E6]">
+              <div class="py-8 px-10 lg:h-[100%]">
+                <h2
+                  class="text-border-bottom mb-4 text-2xl font-bold uppercase"
+                >
+                  richard
+                </h2>
+                <p class="mb-6 w-3/4 font-brygada leading-loose tracking-[1px]">
+                  A tropical leaf, with delightful shapes perfect for offices
+                  and workpaces
+                </p>
+                <a
+                  class="btn-custom-1 relative block text-center tracking-[1px]"
+                  href="#"
+                  >Add to cart</a
+                >
+              </div>
+            </div>
+          </div>
+          <div
+            class="jumbotron relative flex w-screen flex-col justify-end bg-[url('/src/image/bg-1.jpg')] pr-4 pl-4 lg:w-1/2"
+          >
+            <div
+              class="text-menu-plant flex items-end justify-end px-5 pb-4 lg:items-center"
+            >
+              <div
+                class="z-999 relative flex flex-col justify-end text-end font-bold tracking-[1px] lg:h-[75%] lg:p-12"
+              >
+                <a class="block tracking-normal" href="#richard">richard</a>
+                <a class="block tracking-normal" href="#philip">philip</a>
+                <a class="block tracking-normal" href="#olivia">olivia</a>
+                <a class="block tracking-normal" href="#grace">grace</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--------------------------------------------- 
+      Section Header
+    ---------------------------------------------->
+    </header>
+    <!--------------------------------------------- 
+      Header
+    ---------------------------------------------->
+
+    <!--------------------------------------------- 
+      Main
+    ---------------------------------------------->
+    <main>
+      <!--------------------------------------------- 
+        Section Content
+      ---------------------------------------------->
+      <section id="philip">
+        <div class="container mx-auto max-w-full">
+          <div class="flex h-screen flex-wrap">
+            <div
+              class="lg:order-0 order-1 flex items-center justify-center pr-4 pl-4 lg:w-1/2"
+            >
+              <div class="text-center">
+                <h2 class="text-border-bottom-center mb-10 text-5xl uppercase">
+                  philip
+                </h2>
+                <p
+                  class="mx-auto mb-12 w-3/4 font-brygada text-lg leading-loose tracking-normal"
+                >
+                  A tropical leaf, with delightful shapes perfect for offices
+                  and workpaces
+                </p>
+                <a
+                  class="btn-custom-1 relative mx-auto block text-center tracking-normal"
+                  href="#"
+                  >Add to cart</a
+                >
+              </div>
+            </div>
+            <div
+              class="order-0 w-full bg-[url('/src/image/bg-2.jpg')] bg-cover bg-center pr-4 pl-4 lg:order-1 lg:w-1/2"
+            ></div>
+          </div>
+        </div>
+      </section>
+      <!--------------------------------------------- 
+        Section Content
+      ---------------------------------------------->
+
+      <!--------------------------------------------- 
+        Section Content
+      ---------------------------------------------->
+      <section id="olivia">
+        <div class="container mx-auto max-w-full sm:px-4">
+          <div class="flex h-screen flex-wrap">
+            <div
+              class="order-0 lg:order-0 w-full bg-[url('/src/image/bg-3.jpg')] bg-cover bg-center pr-4 pl-4 lg:w-1/2"
+            ></div>
+            <div class="flex items-center justify-center pr-4 pl-4 lg:w-1/2">
+              <div class="wrapper text-center">
+                <h2 class="text-border-bottom-center mb-10 text-5xl uppercase">
+                  olivia
+                </h2>
+                <p
+                  class="mx-auto mb-12 w-3/4 font-brygada text-lg leading-loose tracking-normal"
+                >
+                  A tropical leaf, with delightful shapes perfect for offices
+                  and workpaces
+                </p>
+                <a
+                  class="btn-custom-1 relative mx-auto block text-center tracking-normal"
+                  href="#"
+                  >Add to cart</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--------------------------------------------- 
+        Section Content
+      ---------------------------------------------->
+
+      <!--------------------------------------------- 
+        Section Content
+      ---------------------------------------------->
+      <section id="grace">
+        <div class="container mx-auto max-w-full">
+          <div class="flex h-screen flex-wrap">
+            <div
+              class="lg:order-0 order-1 flex items-center justify-center pr-4 pl-4 lg:w-1/2"
+            >
+              <div class="text-center">
+                <h2 class="text-border-bottom-center mb-10 text-5xl uppercase">
+                  grace
+                </h2>
+                <p
+                  class="mx-auto mb-12 w-3/4 font-brygada text-lg leading-loose tracking-normal"
+                >
+                  A tropical leaf, with delightful shapes perfect for offices
+                  and workpaces
+                </p>
+                <a
+                  class="btn-custom-1 relative mx-auto block text-center tracking-normal"
+                  href="#"
+                  >Add to cart</a
+                >
+              </div>
+            </div>
+            <div
+              class="order-0 w-full bg-[url('/src/image/bg-4.jpg')] bg-cover bg-center pr-4 pl-4 lg:order-1 lg:w-1/2"
+            ></div>
+          </div>
+        </div>
+      </section>
+      <!--------------------------------------------- 
+        Section Content
+      ---------------------------------------------->
+    </main>
+    <!--------------------------------------------- 
+      Main
+    ---------------------------------------------->
+
+    <!--------------------------------------------- 
+      Footer
+    ---------------------------------------------->
+    <footer>
+      <div class="container mx-auto max-w-full sm:px-4">
+        <div class="flex h-[50vh] flex-wrap items-center justify-center py-5">
+          <div class="px-3 lg:w-full">
+            <div class="wrapper">
+              <div
+                class="block text-center lg:flex lg:items-center lg:justify-between"
+              >
+                <div class="mb-5 flex items-center justify-center lg:mb-0">
+                  <a class="text-decoration-none circle-icon mx-2" href="#"
+                    ><i class="fab fa-instagram"></i
+                  ></a>
+                  <a class="text-decoration-none circle-icon mx-2" href="#"
+                    ><i class="fab fa-twitter"></i
+                  ></a>
+                  <a class="text-decoration-none circle-icon mx-2" href="#"
+                    ><i class="fab fa-facebook-f"></i
+                  ></a>
+                  <a class="text-decoration-none circle-icon mx-2" href="#"
+                    ><i class="fab fa-pinterest"></i
+                  ></a>
+                </div>
+                <ul class="mp-0 inline uppercase">
+                  <li class="inline">
+                    <a
+                      class="block py-2 px-4 text-xs font-bold lg:inline"
+                      href="#"
+                      >about</a
+                    >
+                  </li>
+                  <li class="inline">
+                    <a
+                      class="block py-2 px-4 text-xs font-bold lg:inline"
+                      href="#"
+                      >articles</a
+                    >
+                  </li>
+                  <li class="inline">
+                    <a
+                      class="block py-2 px-4 text-xs font-bold lg:inline"
+                      href="#"
+                      >cart</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--------------------------------------------- 
+      Footer
+    ---------------------------------------------->
+    <script src="script.js"></script>
+  </body>
+</html>

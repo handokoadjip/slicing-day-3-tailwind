@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Brygada+1918:wght@400;500;600;700&family=PT+Sans:wght@400;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  ::selection {
+    background: #e3e7ea;
+  }
+
+  html,
+  body {
+    @apply overflow-x-hidden;
+  }
+
+  body {
+    @apply font-openSans;
+    background-color: #fbfbfb;
+    color: #494946;
+    letter-spacing: 5px;
+  }
+
+  a {
+    color: #494946 !important;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: #131312 !important;
+  }
+
+  .scrolled {
+    background-color: rgba(255, 255, 255, 0.8) !important;
+    transition: background-color 200ms linear;
+  }
+}
+
+@layer components {
+  .jumbotron {
+    @apply bg-cover bg-no-repeat;
+    background-position-x: center;
+    background-position-y: 73%;
+  }
+
+  .jumbotron::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.7);
+    filter: grayscale(1);
+  }
+
+  .btn-custom-1 {
+    width: 25%;
+  }
+
+  .btn-custom-1::after {
+    content: "";
+    display: block;
+    width: 100%;
+    border-bottom: 1.5px solid #494946;
+    z-index: 0;
+    margin: auto;
+    margin-top: 0.4rem;
+  }
+
+  .text-jumbotron {
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+@layer utilities {
+  .text-border-top::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 1.5rem;
+    border-bottom: 2.5px solid #494946;
+    z-index: 0;
+    margin-top: -0.4rem;
+  }
+
+  .text-border-bottom::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 1.5rem;
+    border-bottom: 2.5px solid #494946;
+    z-index: 0;
+    margin-top: 0.4rem;
+  }
+
+  .text-border-bottom-center::after {
+    content: "";
+    display: block;
+    width: 30%;
+    border-bottom: 4px solid #494946;
+    z-index: 0;
+    margin: auto;
+    padding-top: 0.4rem;
+  }
+
+  .circle-icon {
+    background-color: #494946;
+    color: #fff !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    padding: 20px;
+    letter-spacing: 0;
+  }
+
+  .circle-icon:hover {
+    background-color: #fff;
+    color: #494946 !important;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+  }  
+}
+
+@screen lg {
+  .jumbotron::before {
+    background: none;
+  }
+}
